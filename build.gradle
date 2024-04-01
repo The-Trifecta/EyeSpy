@@ -182,17 +182,19 @@ publishing {
 }
 
 publishMods {
-    file(jar.archiveFile)
-    changelog(file("CHANGELOG.md").getText())
-    version("${mc_version}-${mod_version}")
-    displayName("${mod_name} v${mc_version}-${mod_version}")
-    type(STABLE)
-    getModLoaders().add("forge")
+    file = jar.archiveFile
+    changelog = file("CHANGELOG.md").getText()
+    version = "${mc_version}-${mod_version}"
+    displayName = "${mod_name} v${mc_version}-${mod_version}"
+    type = STABLE
+
+    modLoaders.add("forge")
 
     curseforge {
         projectId = ""
         projectSlug = "eyespy"
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
+        announcementTitle = "New EyeSpy CurseForge Release"
 
         getMinecraftVersions().add(mc_version)
         requires("geckolib4")
@@ -201,6 +203,7 @@ publishMods {
     modrinth {
         projectId = ""
         accessToken = providers.environmentVariable("MODRINTH_API_KEY")
+        announcementTitle = "New EyeSpy Modrinth Release"
 
         getMinecraftVersions().add(mc_version)
         requires("geckolib4")
