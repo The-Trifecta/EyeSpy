@@ -15,18 +15,18 @@ public final class ESEventManager {
 
     private static void registerClientEvents(IEventBus modBus, IEventBus forgeBus) {
         if (FMLEnvironment.dist.isClient()) {
-            forgeBus.register(ESCommonMiscEvents.class);
-
             modBus.register(ESCommonSetupEvents.ModEvents.class);
+
+            forgeBus.register(ESCommonMiscEvents.class);
         }
     }
 
     private static void registerCommonEvents(IEventBus modBus, IEventBus forgeBus) {
-        forgeBus.register(ESCommonMiscEvents.class);
-        forgeBus.register(ESCommonSetupEvents.ForgeEvents.class);
-
         modBus.addListener(ESNetworkManager::registerPackets);
         modBus.register(ESCommonSetupEvents.ModEvents.class);
+
+        forgeBus.register(ESCommonMiscEvents.class);
+        forgeBus.register(ESCommonSetupEvents.ForgeEvents.class);
     }
 
     private static void registerServerEvents(IEventBus modBus, IEventBus forgeBus) {

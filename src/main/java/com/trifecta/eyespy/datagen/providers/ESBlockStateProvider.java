@@ -1,6 +1,7 @@
 package com.trifecta.eyespy.datagen.providers;
 
 import com.trifecta.eyespy.EyeSpy;
+import com.trifecta.eyespy.common.registry.ESBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FarmBlock;
@@ -9,6 +10,7 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 public class ESBlockStateProvider extends BlockStateProvider {
 
@@ -17,7 +19,13 @@ public class ESBlockStateProvider extends BlockStateProvider {
     }
 
     @Override
+    public @NotNull String getName() {
+        return EyeSpy.MOD_NAME.concat(": BlockState Provider");
+    }
+
+    @Override
     protected void registerStatesAndModels() {//TODO Automate
+        simpleBlock(ESBlocks.SHARDED_PLATFORM_BLOCK.get());
     }
 
     protected void farmland(FarmBlock farmBlock) {

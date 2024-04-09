@@ -197,7 +197,7 @@ publishMods {
         announcementTitle = "New EyeSpy CurseForge Release"
 
         getMinecraftVersions().add(mc_version)
-        requires("geckolib4")
+        requires("geckolib")
     }
 
     modrinth {
@@ -206,7 +206,7 @@ publishMods {
         announcementTitle = "New EyeSpy Modrinth Release"
 
         getMinecraftVersions().add(mc_version)
-        requires("geckolib4")
+        requires("geckolib")
     }
 }
 

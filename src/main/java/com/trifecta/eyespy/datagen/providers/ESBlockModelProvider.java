@@ -1,6 +1,7 @@
 package com.trifecta.eyespy.datagen.providers;
 
 import com.trifecta.eyespy.EyeSpy;
+import com.trifecta.eyespy.common.registry.ESBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.level.block.Block;
@@ -21,6 +22,7 @@ public class ESBlockModelProvider extends BlockModelProvider {
 
     @Override
     protected void registerModels() { //TODO Automate
+        cubeAll(ESBlocks.SHARDED_PLATFORM_BLOCK.get());
     }
 
     protected void cubeAll(Block targetBlock) {

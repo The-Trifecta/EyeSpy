@@ -142,6 +142,8 @@ public class ESLanguageProvider extends LanguageProvider {
 
             EyeSpy.LOGGER.debug("[Currently Translating Block]: " + blockRegName + " -> " + getTranslatedRegistryName(blockRegName));
 
+            handleManualBlockTranslations();
+
             if (blockRegName.endsWith("_block")) localizeGeneralRegistryName(blockRegName, "Block of " + getTranslatedRegistryName(blockRegName).substring(0, getTranslatedRegistryName(blockRegName).lastIndexOf(" Block")));
             else localizeGeneralRegistryName(blockRegName);
         });
@@ -156,7 +158,7 @@ public class ESLanguageProvider extends LanguageProvider {
 
             EyeSpy.LOGGER.debug("[Currently Translating Creative Mode Tab]: " + tabRegName + " -> " + getTranslatedRegistryName(tabRegName));
 
-            MANUAL_INSERTIONS.putAll(getTranslatedRegistryName(tabRegName), ObjectArrayList.of("EyeSpy", ":"));
+            MANUAL_INSERTIONS.putAll(getTranslatedRegistryName(tabRegName), ObjectArrayList.of("Eyespy", ":"));
 
             localizeGeneralRegistryName(tabRegName);
         });
@@ -171,6 +173,10 @@ public class ESLanguageProvider extends LanguageProvider {
 
             localizeGeneralRegistryName(itemRegName);
         });
+    }
+
+    protected void handleManualBlockTranslations() {
+        MANUAL_TRANSLATIONS.put(ESBlocks.SHARDED_PLATFORM_BLOCK.get().getDescriptionId(), "Sharded Platform Block");
     }
 
     private void handleManualTranslations() {

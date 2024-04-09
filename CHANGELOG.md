@@ -1,2 +1,3 @@
-# EyeSpy v1.0.0
+# Changelog
+## EyeSpy v1.0.0
 - Initial release
