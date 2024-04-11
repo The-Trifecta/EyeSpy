@@ -24,7 +24,6 @@ public class ESBlocks {
     public static final RegistryObject<Block> SHARDED_PLATFORM_BLOCK = registerBlock("sharded_platform_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> VOX_BRICKS = registerBlock("vox_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS)));
-
     public static final RegistryObject<Block> VOX_RACK = registerBlock("vox_rack", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)));
 
     public static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
