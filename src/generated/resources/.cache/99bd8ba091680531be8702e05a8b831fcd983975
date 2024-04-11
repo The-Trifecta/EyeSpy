@@ -1,3 +1,7 @@
-// 1.20.1	2024-04-09T22:43:55.6116699	Eye Spy: BlockState Provider
+// 1.20.1	2024-04-11T02:51:47.6769143	Eye Spy: BlockState Provider
 5145d5e376fc9612c32bca5de269d6a9bfd6eca2 assets/eyespy/blockstates/sharded_platform_block.json
+5ea0e035657076be0adedb13b9477746d40f19ba assets/eyespy/blockstates/vox_bricks.json
+746b0ed12e5369625de2516825cf80f46415081b assets/eyespy/blockstates/vox_rack.json
 8ce5ea98464c2cd34518e8e8acfad126de2307fc assets/eyespy/models/block/sharded_platform_block.json
+7f2b4fefd228570410a8ed10dfc12a9730bad1cc assets/eyespy/models/block/vox_bricks.json
+690e8ddbe902410cb5eeb43bb3567dbe59ced2e1 assets/eyespy/models/block/vox_rack.json

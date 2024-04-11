@@ -23,6 +23,8 @@ public class ESBlockModelProvider extends BlockModelProvider {
     @Override
     protected void registerModels() { //TODO Automate
         cubeAll(ESBlocks.SHARDED_PLATFORM_BLOCK.get());
+        cubeAll(ESBlocks.VOX_BRICKS.get());
+        cubeAll(ESBlocks.VOX_RACK.get());
     }
 
     protected void cubeAll(Block targetBlock) {

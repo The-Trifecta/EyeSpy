@@ -1,2 +1,4 @@
-// 1.20.1	2024-04-09T22:25:58.7008875	Loot Tables
+// 1.20.1	2024-04-11T02:51:47.6759001	Loot Tables
 b80df6a89ee653e7c32873fff3ab096203681417 data/eyespy/loot_tables/blocks/sharded_platform_block.json
+a043982f4b50c58e1a3bcc5101a0d129158c382c data/eyespy/loot_tables/blocks/vox_bricks.json
+45fbcb3bc30fa52a60b198dcf719a4d2f649764a data/eyespy/loot_tables/blocks/vox_rack.json

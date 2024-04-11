@@ -19,6 +19,8 @@ public class ESBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() { //TODO Automate
         dropSelf(ESBlocks.SHARDED_PLATFORM_BLOCK.get());
+        dropSelf(ESBlocks.VOX_BRICKS.get());
+        dropSelf(ESBlocks.VOX_RACK.get());
     }
 
     @Override

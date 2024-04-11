@@ -26,6 +26,8 @@ public class ESBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {//TODO Automate
         simpleBlock(ESBlocks.SHARDED_PLATFORM_BLOCK.get());
+        simpleBlock(ESBlocks.VOX_BRICKS.get());
+        simpleBlock(ESBlocks.VOX_RACK.get());
     }
 
     protected void farmland(FarmBlock farmBlock) {
